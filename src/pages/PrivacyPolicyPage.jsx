@@ -1,19 +1,19 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Shield, ArrowLeft, Lock, FileText, CheckCircle, AlertTriangle, PhoneCall, Terminal, Users, Database, HelpCircle } from 'lucide-react';
+import { Shield, ArrowLeft, Lock, FileText, CheckCircle, AlertTriangle, PhoneCall, Terminal, Users, Database, HelpCircle, Mail, Globe, Sparkles, MessageSquare, Info } from 'lucide-react';
 
 const PrivacyPolicyPage = () => {
   useEffect(() => {
-    document.title = "Privacy Policy - AutoReachAI Official Compliance";
+    document.title = "Privacy Policy - AutoReach AI Official Compliance";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Official Privacy Policy for AutoReachAI. Learn how we handle your data with strict on-device processing, zero cloud storage, and transparent Android permission disclosures.");
+      metaDesc.setAttribute("content", "Official Privacy Policy for AutoReach AI. Learn how we handle your data with strict on-device processing, zero cloud storage, and transparent Android permission disclosures.");
     }
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className="min-h-screen bg-white text-slate-700 pt-28 pb-24">
+    <div className="min-h-screen bg-slate-50/50 text-slate-700 pt-28 pb-24">
       {/* Background Glow */}
       <div className="absolute top-20 left-1/2 -translate-x-1/2 w-3/4 h-64 bg-gradient-to-b from-indigo-500/5 via-cyan-500/2 to-transparent blur-3xl pointer-events-none -z-10" />
 
@@ -32,292 +32,285 @@ const PrivacyPolicyPage = () => {
         </div>
 
         {/* Page Header Banner */}
-        <div className="bg-gradient-to-r from-slate-50 via-[#f1f5f9] to-slate-50 p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-xl mb-12 relative overflow-hidden">
-          <div className="absolute top-0 right-0 p-8 opacity-[0.03] text-indigo-600 pointer-events-none">
+        <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 p-8 sm:p-10 rounded-3xl border border-slate-800 shadow-xl mb-12 relative overflow-hidden text-white">
+          <div className="absolute top-0 right-0 p-8 opacity-[0.05] text-indigo-400 pointer-events-none">
             <Shield className="w-48 h-48 -mr-10 -mt-10" />
           </div>
 
           <div className="relative z-10 space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-600 text-xs font-semibold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-semibold uppercase tracking-wider">
               <FileText className="w-3.5 h-3.5" />
-              <span>Official Legal Document</span>
+              <span>Official Privacy & Compliance Policy</span>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight">
-              Privacy Policy for <span className="text-gradient-purple">AutoReachAI</span>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight">
+              Privacy Policy for <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">AutoReach AI</span>
             </h1>
 
-            <div className="flex flex-wrap items-center gap-4 text-xs sm:text-sm text-slate-500 pt-2 border-t border-slate-200">
-              <span className="flex items-center gap-1.5 font-bold text-emerald-600">
+            <div className="flex flex-wrap items-center gap-4 text-xs sm:text-sm text-slate-400 pt-4 border-t border-slate-800">
+              <span className="flex items-center gap-1.5 font-bold text-emerald-400">
                 <CheckCircle className="w-4 h-4" />
                 Google Play Compliant
               </span>
               <span>&bull;</span>
-              <span><strong>Last updated:</strong> July 03, 2026</span>
+              <span><strong>Last Updated:</strong> July 28, 2026</span>
               <span>&bull;</span>
-              <span><strong>Country:</strong> Maharashtra, India</span>
+              <span><strong>Developer:</strong> Infoyashonand Technology Pvt Ltd</span>
+              <span>&bull;</span>
+              <span><strong>Package:</strong> com.spark.autoreachai</span>
             </div>
           </div>
         </div>
 
         {/* Main Content Body */}
-        <article className="glass-card p-8 sm:p-12 rounded-3xl border border-slate-200/80 space-y-10 font-sans leading-relaxed text-slate-700 text-base shadow-lg">
+        <article className="bg-white p-8 sm:p-12 rounded-3xl border border-slate-200/80 space-y-10 font-sans leading-relaxed text-slate-700 text-base shadow-lg relative overflow-hidden">
           
-          {/* Introduction */}
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3">
-              Introduction
-            </h2>
-            <p>
-              This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
+          {/* Welcome Message */}
+          <div className="p-6 rounded-2xl bg-indigo-50/50 border border-indigo-100/80 text-slate-700">
+            <p className="leading-relaxed">
+              <strong>Infoyashonand Technology Pvt Ltd</strong> ("we," "our," or "us") operates the <strong>AutoReach AI</strong> mobile application. We respect your privacy and are committed to protecting your personal data.
             </p>
+            <p className="mt-3 leading-relaxed">
+              This Privacy Policy explains how our application handles information, including sensitive permissions requested on your Android device. By using the Service, you agree to the collection and use of information in accordance with this Privacy Policy.
+            </p>
+          </div>
+
+          {/* 1. Core Functionality & Purpose */}
+          <section className="space-y-4">
+            <div className="flex items-center gap-3 border-b border-slate-100 pb-3">
+              <div className="w-8 h-8 rounded-lg bg-indigo-50 flex items-center justify-center text-indigo-600">
+                <Sparkles className="w-4 h-4" />
+              </div>
+              <h2 className="text-2xl font-extrabold text-slate-900">
+                1. Core Functionality & Purpose
+              </h2>
+            </div>
             <p>
-              We use Your Personal Data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.
+              AutoReach AI functions as a <strong>Default SMS Application</strong> and <strong>Call Response Automation Tool</strong>. Its core purpose is to allow users to manage SMS messages, send/receive text conversations, and automatically dispatch custom pre-configured SMS replies to incoming callers when a call is missed or rejected.
             </p>
           </section>
 
-          {/* Interpretation and Definitions */}
+          {/* 2. Sensitive Permissions & Data Usage */}
           <section className="space-y-6">
-            <h2 className="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3">
-              Interpretation and Definitions
-            </h2>
-            
-            <div className="space-y-3">
-              <h3 className="text-lg font-semibold text-indigo-600">Interpretation</h3>
-              <p>
-                The words whose initial letters are capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold text-indigo-600">Definitions</h3>
-              <p className="text-sm text-slate-500">For the purposes of this Privacy Policy:</p>
-              
-              <ul className="space-y-3 list-disc list-inside pl-2 text-slate-700">
-                <li><strong className="text-slate-900">Account</strong> means a unique account created for You to access our Service or parts of our Service.</li>
-                <li><strong className="text-slate-900">Affiliate</strong> means an entity that controls, is controlled by, or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</li>
-                <li><strong className="text-slate-900">Application</strong> refers to AutoReachAI, the software program provided by the Company.</li>
-                <li><strong className="text-slate-900">Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Privacy Policy) refers to AutoReachAI.</li>
-                <li><strong className="text-slate-900">Country</strong> refers to: Maharashtra, India</li>
-                <li><strong className="text-slate-900">Device</strong> means any device that can access the Service such as a computer, a cell phone or a digital tablet.</li>
-                <li><strong className="text-slate-900">Personal Data</strong> (or "Personal Information") is any information that relates to an identified or identifiable individual.</li>
-                <li><strong className="text-slate-900">Service</strong> refers to the Application.</li>
-                <li><strong className="text-slate-900">Service Provider</strong> means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.</li>
-                <li><strong className="text-slate-900">Usage Data</strong> refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself.</li>
-                <li><strong className="text-slate-900">You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</li>
-              </ul>
-            </div>
-          </section>
-
-          {/* Collecting and Using Your Personal Data */}
-          <section className="space-y-6">
-            <h2 className="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3">
-              Collecting and Using Your Personal Data
-            </h2>
-
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold text-indigo-600">Types of Data Collected</h3>
-              
-              <div className="space-y-2">
-                <h4 className="text-base font-bold text-slate-900">Personal Data</h4>
-                <p>
-                  While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to Usage Data.
-                </p>
+            <div className="flex items-center gap-3 border-b border-slate-100 pb-3">
+              <div className="w-8 h-8 rounded-lg bg-cyan-50 flex items-center justify-center text-cyan-600">
+                <Lock className="w-4 h-4" />
               </div>
-
-              <div className="space-y-2">
-                <h4 className="text-base font-bold text-slate-900">Usage Data</h4>
-                <p>
-                  Usage Data is collected automatically when using the Service.
-                </p>
-                <p>
-                  Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, unique device identifiers and other diagnostic data.
-                </p>
-                <p>
-                  When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device's unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.
-                </p>
-              </div>
+              <h2 className="text-2xl font-extrabold text-slate-900">
+                2. Sensitive Permissions & Data Usage
+              </h2>
             </div>
-
-            {/* Crucial Android Permissions Section */}
-            <div className="space-y-6 pt-4">
-              <div className="p-4 rounded-2xl bg-cyan-50 border border-cyan-200 flex items-center gap-3">
-                <Lock className="w-6 h-6 text-cyan-600 shrink-0" />
-                <div className="text-sm">
-                  <span className="font-bold text-slate-900">Crucial Device Permissions Notice:</span>
-                  <p className="text-slate-600">The following sections detail our strict on-device data processing policies for Android permissions.</p>
-                </div>
-              </div>
-
-              <h3 className="text-xl font-bold text-slate-900">Information Collected while Using the Application</h3>
-              <p>
-                While using Our Application, in order to provide features of Our Application, We may collect, with Your prior permission:
-              </p>
-
-              <div className="space-y-6">
-                
-                {/* 1. Phone Book */}
-                <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 space-y-3">
-                  <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-lg bg-indigo-50 flex items-center justify-center text-indigo-600">
-                      <Users className="w-5 h-5" />
-                    </div>
-                    <h4 className="text-base font-bold text-slate-900">1. Information from your Device's phone book (contacts list)</h4>
-                  </div>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    We use this information to provide features of Our Service, to improve and customize Our Service. The information may be simply stored on Your device. You can enable or disable access to this information at any time, through Your Device settings.
-                  </p>
-                </div>
-
-                {/* 2. SMS and Call Log Permissions */}
-                <div className="bg-slate-50 p-6 rounded-2xl border border-cyan-200 space-y-3 shadow-sm">
-                  <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-lg bg-cyan-50 flex items-center justify-center text-cyan-600">
-                      <PhoneCall className="w-5 h-5" />
-                    </div>
-                    <h4 className="text-base font-bold text-slate-900">2. SMS and Call Log Permissions (Default SMS Handler & Call Logs)</h4>
-                  </div>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    We request permissions such as <code className="text-cyan-700 font-mono bg-cyan-100 px-1.5 py-0.5 rounded">READ_CALL_LOG</code>, <code className="text-cyan-700 font-mono bg-cyan-100 px-1.5 py-0.5 rounded">READ_CONTACTS</code>, and <code className="text-cyan-700 font-mono bg-cyan-100 px-1.5 py-0.5 rounded">SEND_SMS</code>. These permissions are used solely to detect incoming or missed calls to trigger your user-configured auto-reply rules, and to send automated SMS responses as configured by you.
-                  </p>
-                  <div className="p-3 bg-white rounded-xl border border-slate-100 text-xs text-emerald-700 font-semibold shadow-sm">
-                    &bull; Your call logs and SMS data are processed strictly locally on your device to run the automation rules you set. We do not upload, share, or transmit your SMS contents, call logs, or contact databases to our servers or any third parties.
-                  </div>
-                </div>
-
-                {/* 3. Accessibility Service API */}
-                <div className="bg-slate-50 p-6 rounded-2xl border border-purple-200 space-y-3 shadow-sm">
-                  <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-lg bg-purple-50 flex items-center justify-center text-purple-600">
-                      <Terminal className="w-5 h-5" />
-                    </div>
-                    <h4 className="text-base font-bold text-slate-900">3. Accessibility Service API (WhatsApp Automation)</h4>
-                  </div>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    We utilize the Accessibility Service API solely to automate the sending of user-initiated messages via WhatsApp. When triggered by your automation rules, the Accessibility Service programmatically pastes your template text into the WhatsApp message input field and automatically clicks the send button on your behalf.
-                  </p>
-                  <div className="p-3 bg-white rounded-xl border border-slate-100 text-xs text-emerald-700 font-semibold shadow-sm">
-                    &bull; Crucially, the Accessibility Service operates entirely locally. We do not use this service to monitor your screen, collect your keystrokes, read chat messages, record calls, track user actions, or transmit any data from your device to our servers or any third parties.
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </section>
-
-          {/* Use of Your Personal Data */}
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3">
-              Use of Your Personal Data
-            </h2>
-            <p>The Company may use Personal Data for the following purposes:</p>
-            
-            <ul className="space-y-2 list-disc list-inside pl-2 text-slate-700">
-              <li><strong className="text-slate-900">To provide and maintain our Service</strong>, including to monitor the usage of our Service.</li>
-              <li><strong className="text-slate-900">To manage Your Account.</strong></li>
-              <li><strong className="text-slate-900">To contact You:</strong> To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication.</li>
-              <li><strong className="text-slate-900">To manage Your requests.</strong></li>
-            </ul>
-
-            <div className="p-4 rounded-2xl bg-emerald-50 border border-emerald-100 text-emerald-800 text-sm font-semibold mt-4">
-              <strong>We do not sell Your Personal Data.</strong> Your sensitive device data (contacts, SMS, call logs, and Accessibility interactions) is never shared with third parties or advertisers.
-            </div>
-          </section>
-
-          {/* Retention of Your Personal Data */}
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3">
-              Retention of Your Personal Data
-            </h2>
             <p>
-              The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy.
+              To deliver its core features, AutoReach AI requests access to specific sensitive Android permissions. All data accessed by these permissions is processed <strong>100% on-device</strong> and is <strong>never collected, uploaded, sold, or shared with external servers or third parties.</strong>
             </p>
-            <ul className="space-y-2 list-disc list-inside pl-2 text-slate-700">
-              <li>Account Information and Usage Data statistics are retained up to 24 months.</li>
-              <li><strong className="text-slate-900">Locally processed sensitive data (SMS, call logs, and WhatsApp automation history) remains on your device and is not retained on our servers.</strong></li>
+
+            <div className="space-y-6">
+              {/* A. SMS Permissions */}
+              <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-lg bg-indigo-50 flex items-center justify-center text-indigo-600">
+                    <MessageSquare className="w-5 h-5" />
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900">A. SMS Permissions (<code className="text-indigo-600 font-mono bg-indigo-50 px-1 py-0.5 rounded text-sm">SEND_SMS</code>, <code className="text-indigo-600 font-mono bg-indigo-50 px-1 py-0.5 rounded text-sm">RECEIVE_SMS</code>, <code className="text-indigo-600 font-mono bg-indigo-50 px-1 py-0.5 rounded text-sm">READ_SMS</code>)</h3>
+                </div>
+                <div className="space-y-2 text-sm text-slate-600 pl-1">
+                  <p><strong>Purpose:</strong> Required because AutoReach AI functions as your device's <strong>Default SMS Handler</strong>. These permissions enable the app to compose, send, receive, and display SMS messages, as well as send automated SMS replies (e.g., using your pre-set templates) when you receive a missed call.</p>
+                  <p><strong>Data Storage:</strong> All SMS content and message history remain strictly stored locally on your device.</p>
+                </div>
+              </div>
+
+              {/* B. Call Log Permission */}
+              <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-lg bg-cyan-50 flex items-center justify-center text-cyan-600">
+                    <PhoneCall className="w-5 h-5" />
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900">B. Call Log Permission (<code className="text-cyan-600 font-mono bg-cyan-50 px-1 py-0.5 rounded text-sm">READ_CALL_LOG</code>)</h3>
+                </div>
+                <div className="space-y-2 text-sm text-slate-600 pl-1">
+                  <p><strong>Purpose:</strong> Required to detect phone call outcomes (such as missed calls or rejected calls) immediately after a call ends. The app reads recent call events solely to match missed calls against your selected auto-reply settings.</p>
+                  <p><strong>Data Storage:</strong> Call log data is read on-demand locally on your device and is never transmitted off your device.</p>
+                </div>
+              </div>
+
+              {/* C. Phone State Permission */}
+              <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-lg bg-emerald-50 flex items-center justify-center text-emerald-600">
+                    <Shield className="w-5 h-5" />
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900">C. Phone State Permission (<code className="text-emerald-600 font-mono bg-emerald-50 px-1 py-0.5 rounded text-sm">READ_PHONE_STATE</code>)</h3>
+                </div>
+                <div className="space-y-2 text-sm text-slate-600 pl-1">
+                  <p><strong>Purpose:</strong> Required to detect real-time telephony state transitions (idle, ringing, or call ended) so the app knows when a call occurs and can evaluate if an auto-reply should be triggered.</p>
+                </div>
+              </div>
+
+              {/* D. Contacts Permission */}
+              <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-lg bg-purple-50 flex items-center justify-center text-purple-600">
+                    <Users className="w-5 h-5" />
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900">D. Contacts Permission (<code className="text-purple-600 font-mono bg-purple-50 px-1 py-0.5 rounded text-sm">READ_CONTACTS</code>)</h3>
+                </div>
+                <div className="space-y-2 text-sm text-slate-600 pl-1">
+                  <p><strong>Purpose:</strong> Read-only access to resolve caller phone numbers to contact names. This allows the app to display friendly contact names in your recent activity log instead of raw phone numbers.</p>
+                </div>
+              </div>
+
+              {/* E. Notification Permission */}
+              <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-lg bg-amber-50 flex items-center justify-center text-amber-600">
+                    <Info className="w-5 h-5" />
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900">E. Notification Permission (<code className="text-amber-600 font-mono bg-amber-50 px-1 py-0.5 rounded text-sm">POST_NOTIFICATIONS</code>)</h3>
+                </div>
+                <div className="space-y-2 text-sm text-slate-600 pl-1">
+                  <p><strong>Purpose:</strong> Required on Android 13+ to display status notifications when automated reply messages are sent or when user action is required.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* 3. Prominent Disclosure: Accessibility Service API */}
+          <section className="space-y-6">
+            <div className="flex items-center gap-3 border-b border-slate-100 pb-3">
+              <div className="w-8 h-8 rounded-lg bg-purple-50 flex items-center justify-center text-purple-600">
+                <Terminal className="w-4 h-4" />
+              </div>
+              <h2 className="text-2xl font-extrabold text-slate-900 flex flex-wrap items-center gap-x-2 gap-y-1">
+                <span>3. Prominent Disclosure: Accessibility Service API</span>
+                <span className="text-sm font-mono text-purple-600 bg-purple-50 px-2 py-0.5 rounded border border-purple-200">
+                  BIND_ACCESSIBILITY_SERVICE
+                </span>
+              </h2>
+            </div>
+            <p>
+              AutoReach AI provides an <strong>optional</strong> feature allowing users to automate reply messages via WhatsApp.
+            </p>
+            <div className="bg-purple-50/50 border border-purple-200 p-6 rounded-2xl space-y-4">
+              <div className="space-y-1">
+                <strong className="text-slate-900 block font-bold text-base">How Accessibility is Used:</strong>
+                <p className="text-sm text-slate-700">
+                  When enabled by the user, AutoReach AI uses the Android Accessibility Service API <strong>exclusively</strong> to perform automated UI interactions within the official WhatsApp application (specifically to locate the text message input field and send button to dispatch your pre-set reply message).
+                </p>
+              </div>
+              <div className="space-y-2 pt-2 border-t border-purple-200">
+                <strong className="text-slate-900 block font-bold text-base">Privacy & Security Guarantee:</strong>
+                <ul className="list-disc pl-5 text-sm text-slate-700 space-y-2">
+                  <li>The Accessibility Service API is <strong>NOT</strong> used to monitor, read, collect, or store screen text, personal messages, or user inputs outside of dispatching the auto-reply.</li>
+                  <li>The Accessibility Service API is <strong>NOT</strong> used to track keystrokes, log passwords, or capture personal data.</li>
+                  <li>This feature is <strong>100% optional</strong> and requires explicit user enablement in Android Accessibility Settings. AutoReach AI operates fully as an SMS client without enabling Accessibility Services.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          {/* 4. Third-Party Data Sharing & Selling */}
+          <section className="space-y-4">
+            <div className="flex items-center gap-3 border-b border-slate-100 pb-3">
+              <div className="w-8 h-8 rounded-lg bg-emerald-50 flex items-center justify-center text-emerald-600">
+                <CheckCircle className="w-4 h-4" />
+              </div>
+              <h2 className="text-2xl font-extrabold text-slate-900">
+                4. Third-Party Data Sharing & Selling
+              </h2>
+            </div>
+            <ul className="list-disc pl-5 space-y-2 text-slate-700">
+              <li><strong>No Data Selling:</strong> We do <strong>not</strong> sell, rent, or trade your personal data, call logs, contacts, or SMS messages to any third party.</li>
+              <li><strong>No Analytics Tracking on Sensitive Data:</strong> We do not track or log your sensitive communication contents or caller details.</li>
             </ul>
           </section>
 
-          {/* Transfer of Your Personal Data */}
+          {/* 5. Data Retention & Deletion */}
           <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3">
-              Transfer of Your Personal Data
-            </h2>
+            <div className="flex items-center gap-3 border-b border-slate-100 pb-3">
+              <div className="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
+                <Database className="w-4 h-4" />
+              </div>
+              <h2 className="text-2xl font-extrabold text-slate-900">
+                5. Data Retention & Deletion
+              </h2>
+            </div>
             <p>
-              Your information is processed at the Company's operating offices. It means that this information may be transferred to — and maintained on — computers located outside of Your jurisdiction. The Company will take all steps reasonably necessary to ensure that Your data is treated securely.
+              Because all app data (templates, activity logs, and settings) is stored locally on your device's private application storage:
+            </p>
+            <ul className="list-disc pl-5 space-y-2 text-slate-700">
+              <li>You can clear all data at any time by going to <strong>Android Settings &rarr; Apps &rarr; AutoReach AI &rarr; Clear Data / Clear Storage</strong>.</li>
+              <li>Uninstalling the application immediately and permanently removes all app settings and logs from your device.</li>
+            </ul>
+          </section>
+
+          {/* 6. Children's Privacy */}
+          <section className="space-y-4">
+            <div className="flex items-center gap-3 border-b border-slate-100 pb-3">
+              <div className="w-8 h-8 rounded-lg bg-rose-50 flex items-center justify-center text-rose-600">
+                <AlertTriangle className="w-4 h-4" />
+              </div>
+              <h2 className="text-2xl font-extrabold text-slate-900">
+                6. Children's Privacy
+              </h2>
+            </div>
+            <p>
+              AutoReach AI is not intended for use by children under the age of 13. We do not knowingly collect personal information from children.
             </p>
           </section>
 
-          {/* Delete Your Personal Data */}
+          {/* 7. Changes to This Privacy Policy */}
           <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3">
-              Delete Your Personal Data
-            </h2>
+            <div className="flex items-center gap-3 border-b border-slate-100 pb-3">
+              <div className="w-8 h-8 rounded-lg bg-amber-50 flex items-center justify-center text-amber-600">
+                <HelpCircle className="w-4 h-4" />
+              </div>
+              <h2 className="text-2xl font-extrabold text-slate-900">
+                7. Changes to This Privacy Policy
+              </h2>
+            </div>
             <p>
-              You have the right to delete or request that We assist in deleting the Personal Data that We have collected about You. You may update, amend, or delete Your information at any time from within the app settings or by contacting us.
+              We may update our Privacy Policy from time to time to reflect policy or regulatory changes. Any updates will be posted on this page with an updated "Last Updated" date.
             </p>
           </section>
 
-          {/* Security of Your Personal Data */}
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3">
-              Security of Your Personal Data
-            </h2>
+          {/* 8. Contact Us */}
+          <section className="space-y-6 pt-6 border-t border-slate-200">
+            <div className="flex items-center gap-3">
+              <div className="w-8 h-8 rounded-lg bg-indigo-50 flex items-center justify-center text-indigo-600">
+                <Mail className="w-4 h-4" />
+              </div>
+              <h2 className="text-2xl font-extrabold text-slate-900">
+                8. Contact Us
+              </h2>
+            </div>
             <p>
-              The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure.
+              If you have any questions or concerns regarding this Privacy Policy or data privacy practices, please contact us:
             </p>
-          </section>
 
-          {/* Children's Privacy */}
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3">
-              Children's Privacy
-            </h2>
-            <p>
-              Our Service does not address anyone under the age of 16. We do not knowingly collect personally identifiable information from anyone under the age of 16.
-            </p>
-          </section>
-
-          {/* Links to Other Websites */}
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3">
-              Links to Other Websites
-            </h2>
-            <p>
-              Our Service may contain links to other websites that are not operated by Us. We strongly advise You to review the Privacy Policy of every site You visit.
-            </p>
-          </section>
-
-          {/* Changes to this Privacy Policy */}
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3">
-              Changes to this Privacy Policy
-            </h2>
-            <p>
-              We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.
-            </p>
-          </section>
-
-          {/* Contact Us */}
-          <section className="space-y-4 pt-4 border-t border-slate-200">
-            <h2 className="text-2xl font-bold text-slate-900">
-              Contact Us
-            </h2>
-            <p>
-              If you have any questions about this Privacy Policy, you can contact us at <a href="mailto:sparkcomputer555@gmail.com" className="text-indigo-600 font-bold hover:underline">sparkcomputer555@gmail.com</a>:
-            </p>
-            <div className="p-5 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-inner">
-              <div>
-                <div className="text-sm font-bold text-slate-900">AutoReachAI Legal & Privacy Team</div>
-                <div className="text-xs text-indigo-600 font-bold">sparkcomputer555@gmail.com</div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+                <span className="text-xs font-bold text-indigo-600 uppercase tracking-wider block">Company & App Details</span>
+                <div className="text-sm font-bold text-slate-900">Infoyashonand Technology Pvt Ltd</div>
+                <div className="text-xs text-slate-500 font-semibold">Package: com.spark.autoreachai</div>
                 <div className="text-xs text-slate-500 font-semibold">Operating Jurisdiction: Maharashtra, India</div>
               </div>
-              <a
-                href="mailto:sparkcomputer555@gmail.com"
-                className="px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm transition-colors flex items-center gap-2 shadow-md shadow-indigo-500/10 animate-pulse"
-              >
-                <span>Send us an email</span>
-              </a>
+              
+              <div className="p-5 rounded-2xl bg-indigo-50/30 border border-indigo-100 flex flex-col justify-between gap-4">
+                <div>
+                  <span className="text-xs font-bold text-indigo-600 uppercase tracking-wider block">Support & Website</span>
+                  <a href="mailto:support@autoreachai.com" className="text-sm font-bold text-slate-900 hover:underline block mt-1">support@autoreachai.com</a>
+                  <a href="https://auto-reach-ai-tau.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-xs text-indigo-600 font-semibold hover:underline block mt-1 flex items-center gap-1">
+                    <Globe className="w-3 h-3" />
+                    <span>auto-reach-ai-tau.vercel.app</span>
+                  </a>
+                </div>
+                <a
+                  href="mailto:support@autoreachai.com"
+                  className="w-full text-center px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm transition-colors block shadow-md shadow-indigo-500/10"
+                >
+                  Send us an email
+                </a>
+              </div>
             </div>
           </section>
 

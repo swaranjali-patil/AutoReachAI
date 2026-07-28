@@ -605,12 +605,12 @@ const LandingPage = () => {
               </h2>
 
               <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-                Join thousands of businesses using AutoReachAI to respond instantly to missed calls and messages. Email us at <strong className="text-indigo-600">sparkcomputer555@gmail.com</strong> for a custom setup.
+                Join thousands of businesses using AutoReachAI to respond instantly to missed calls and messages. Email us at <strong className="text-indigo-600">support@autoreachai.com</strong> for a custom setup.
               </p>
 
               <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
-                  href="mailto:sparkcomputer555@gmail.com"
+                  href="mailto:support@autoreachai.com"
                   id="bottom-contact-btn"
                   className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-indigo-600 text-white font-bold text-base shadow-xl shadow-indigo-500/20 hover:bg-indigo-700 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
                 >
