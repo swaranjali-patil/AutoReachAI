@@ -63,7 +63,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="mailto:support@autoreachai.com" className="text-indigo-600 hover:text-indigo-700 transition-colors font-medium">
+                <a href="mailto:sparkcomputer555@gmail.com" className="text-indigo-600 hover:text-indigo-700 transition-colors font-medium">
                   Contact Support
                 </a>
               </li>
@@ -97,10 +97,10 @@ const Footer = () => {
           <div className="md:col-span-2 space-y-3">
             <h3 className="text-sm font-semibold text-slate-800 tracking-wider uppercase">Contact Us</h3>
             <p className="text-xs text-slate-500 leading-relaxed">
-              Have questions or need custom automation rules? Email us at <strong className="text-indigo-600">support@autoreachai.com</strong> or click below.
+              Have questions or need custom automation rules? Email us at <strong className="text-indigo-600">sparkcomputer555@gmail.com</strong> or click below.
             </p>
             <a 
-              href="mailto:support@autoreachai.com" 
+              href="mailto:sparkcomputer555@gmail.com" 
               id="footer-contact-link"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-slate-200 text-sm text-indigo-600 hover:bg-slate-50 hover:border-indigo-500/30 transition-all font-semibold shadow-sm w-full justify-center"
             >

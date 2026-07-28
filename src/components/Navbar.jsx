@@ -102,7 +102,7 @@ const Navbar = () => {
           {/* Action Button */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="mailto:support@autoreachai.com"
+              href="mailto:sparkcomputer555@gmail.com"
               id="nav-contact-btn"
               className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium rounded-xl group bg-gradient-to-br from-cyan-500 via-indigo-500 to-purple-600 text-white shadow-md hover:shadow-lg transition-all duration-300 active:scale-95"
             >
@@ -172,7 +172,7 @@ const Navbar = () => {
               </Link>
               <div className="pt-3">
                 <a
-                  href="mailto:support@autoreachai.com"
+                  href="mailto:sparkcomputer555@gmail.com"
                   id="mobile-contact-btn"
                   className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-semibold text-center flex items-center justify-center gap-2 shadow-lg"
                 >

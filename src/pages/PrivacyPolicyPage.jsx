@@ -298,14 +298,14 @@ const PrivacyPolicyPage = () => {
               <div className="p-5 rounded-2xl bg-indigo-50/30 border border-indigo-100 flex flex-col justify-between gap-4">
                 <div>
                   <span className="text-xs font-bold text-indigo-600 uppercase tracking-wider block">Support & Website</span>
-                  <a href="mailto:support@autoreachai.com" className="text-sm font-bold text-slate-900 hover:underline block mt-1">support@autoreachai.com</a>
+                  <a href="mailto:sparkcomputer555@gmail.com" className="text-sm font-bold text-slate-900 hover:underline block mt-1">sparkcomputer555@gmail.com</a>
                   <a href="https://auto-reach-ai-tau.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-xs text-indigo-600 font-semibold hover:underline block mt-1 flex items-center gap-1">
                     <Globe className="w-3 h-3" />
                     <span>auto-reach-ai-tau.vercel.app</span>
                   </a>
                 </div>
                 <a
-                  href="mailto:support@autoreachai.com"
+                  href="mailto:sparkcomputer555@gmail.com"
                   className="w-full text-center px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm transition-colors block shadow-md shadow-indigo-500/10"
                 >
                   Send us an email
